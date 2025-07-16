@@ -1,0 +1,127 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #1a252f;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.player-info,
+.chips-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.player-info label,
+.chips-section label {
+  flex-shrink: 0;
+  width: auto;
+}
+
+input[type="text"],
+input[type="number"] {
+  flex: 1;
+  min-width: 150px;
+  padding: 8px 12px;
+  border: 2px solid #ffd700;
+  border-radius: 8px; 
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e6c200;
+}
+
+.btn-primary {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #d35400;
+}
+
+#playersContainer {
+  margin-top: 20px;
+}
+
+.player-card {
+  background: linear-gradient(135deg, #37474f, #263238);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+.player-card:hover {
+  transform: translateY(-2px);
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.stats label {
+  margin: 0;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.buyin-count {
+  font-size: 1.2em;
+  min-width: 30px;
+  text-align: center;
+}
+.buyin-btn {
+  padding: 8px 16px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.buyin-btn:hover {
+  background-color: #e6c200;
+}
