@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tính Tiền Poker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tính Tiền Poker</h1>
+    <div class="row">
+      <label>
+        Số người chơi:
+        <input type="number" id="numPlayers" min="1" max="10" value="2" />
+      </label>
+      <button id="createPlayersBtn">Nhập tên người chơi</button>
+    </div>
+
+    <div id="settings" style="display:none;">
+      <div class="row">
+        <label>
+          Giá tiền 1 buyin:
+          <input type="number" id="buyInPrice" min="1" value="1000" />
+        </label>
+      </div>
+
+      <div id="playersContainer"></div>
+
+      <div class="row">
+        <button id="calculateBtn" class="btn-primary">Tính tiền</button>
+      </div>
+    </div>
+
+    <pre id="result"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
